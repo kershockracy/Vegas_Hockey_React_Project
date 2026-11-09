@@ -1,3 +1,36 @@
+# VEGAS HOCKEY — NEW UPDATE: WEATHER + COACH CORNER + PLAYBOOK + AIRLINES
+
+This is the existing **Vegas_Hockey_React_Project** updated. Keep the same repository. The ZIP is flat (package.json at the top).
+
+## VS Code / GitHub Pages update instructions
+
+1. Back up the current folder, then replace its source files with this updated project. Do not nest another project inside the existing project.
+2. In VS Code, open the project folder (the one directly containing package.json).
+3. Run `npm install` (if needed) and `npm run dev` to preview.
+4. Run `npm run build` to generate `docs/` (already configured in vite.config.js).
+5. In the VS Code Source Control tab: stage all changes, Commit, and Sync Changes to GitHub.
+6. In your repository, Settings > Pages should use `main` and `/docs`. If it was already configured, no need to change it.
+
+## What to edit later
+
+- `src/data/weather.js`: five daily snapshot values, condition, as-of date. **Weather is not live.** Website links to live forecast.
+- `src/data/coach.js`: COACH_NOTES array. Enter actual coach announcements as object entries; do not invent coach messages. GitHub Pages has NO shared message-posting back end.
+- `public/HOCKEY_PLAYBOOK.pdf`: exact original four-page PDF from the coach. Builds into `docs/HOCKEY_PLAYBOOK.pdf` and is publicly accessible.
+- `src/data/airlines.js`: OTHER_AIRLINES array provides space to add verified rules for other teammates.
+
+## Notes about public sharing
+
+Anyone with the public website or GitHub repo link can view the original playbook PDF. Ask the coach before publicly publishing sensitive plays. Do not commit private booking codes, contact information, or API keys. The site includes its usual official ASHA schedule link at the TOP.
+
+## For ITEC 305 practice
+
+- `Weather.jsx`: arrays, objects, named imports, JSX expressions, props, .map(), spread, keys.
+- `CoachCorner.jsx`: ternary conditional rendering, reusable components, .map(), props; explain why static GitHub Pages cannot store shared coach posts.
+- `AirlineGuide.jsx`: data separation, .map(), props, conditional rendering, template strings in coach pages.
+- `index.css`: class selectors and responsive CSS, not React state.
+
+---
+
 # Vegas Hockey 2026 — React Itinerary
 
 A real, shareable group itinerary built only around the techniques shown in the attached NYIT ITEC 305 React class starter, React introduction, React Deep Dive notes, and class homework. **No quiz or study-exam interface.** Explanations are written as abundant comments next to the code that demonstrates each idea.

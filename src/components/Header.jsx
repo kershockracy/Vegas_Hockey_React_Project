@@ -36,8 +36,11 @@ export default function Header() {
           </a>
           <nav className="site-nav" aria-label="Site sections">
             <a href="#official-schedule">Game schedule</a>
+            <a href="#weather">Weather</a>
             <a href="#itinerary">Itinerary</a>
+            <a href="#coach">Coach / Playbook</a>
             <a href="#locations">Rinks & maps</a>
+            <a href="#airlines">Airlines</a>
             <a href="#packing">Packing</a>
           </nav>
         </div>

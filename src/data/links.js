@@ -11,6 +11,7 @@ export const LINKS = {
   airbnb: 'https://www.airbnb.com/rooms/749373436292074178',
   nhlEvent: 'https://www.axs.com/events/1541367/utah-mammoth-vs-vegas-golden-knights-tickets',
   jetblue: 'https://www.jetblue.com/flight-tracker-and-status',
+  weather: 'https://www.accuweather.com/en/us/las-vegas/89101/10-day-weather-forecast/329506',
   bellagio: 'https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.html',
   fremont: 'https://fremontstreetexperience.com/',
   mapAmerica: 'https://www.google.com/maps/search/?api=1&query=America+First+Center+222+S+Water+St+Henderson+NV',

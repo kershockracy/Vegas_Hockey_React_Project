@@ -23,6 +23,9 @@ import LocationLinks from './components/LocationLinks.jsx';
 import TravelInfo from './components/TravelInfo.jsx';
 import PackingChecklist from './components/PackingChecklist.jsx';
 import Section from './components/Section.jsx';
+import Weather from './components/Weather.jsx';
+import CoachCorner from './components/CoachCorner.jsx';
+import AirlineGuide from './components/AirlineGuide.jsx';
 
 // "export default" lets index.jsx import the component as App.
 // The <Header /> syntax is COMPONENT COMPOSITION: you use a component
@@ -37,10 +40,16 @@ export default function App() {
       <Header />
       <main>
         <OfficialSchedule />
+        {/* Weather snapshot (plain JS array) with a current forecast link. */}
+        <Weather />
         <Hero />
         <Itinerary />
+        {/* The coach notes are data; the playbook PDF lives in public/. */}
+        <CoachCorner />
         <LocationLinks />
         <TravelInfo />
+        {/* Policy cards are generated with .map(), not manually duplicated. */}
+        <AirlineGuide />
         <PackingChecklist />
       </main>
       <footer className="footer">
