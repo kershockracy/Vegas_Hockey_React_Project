@@ -107,3 +107,24 @@ Each itinerary day now has a modest **Veteran food & perks** note at the very bo
 **To add/edit an offer:** Add or change its entry in `VETERAN_OFFERS`, optionally add its ID to `VETERAN_OFFER_ORDER`, then add that ID to a day in `days.js`. No advanced API code, database, or new library is needed.
 
 **Publishing to the same GitHub Pages site:** Extract this ZIP and copy its contents INSIDE your existing Git-connected `Vegas_Hockey_React_Project` folder. Preserve the original hidden `.git` folder. Preview with `npm run dev`, then run `npm run build` (this updates `docs/`), then commit and sync in VS Code. Do not just push `src/` updates: GitHub Pages reads the built `docs/` files.
+
+## New: Near the Airbnb — local essentials finder (November 9, 2026)
+
+- Site section: `src/components/NearbyEssentials.jsx` (accessible in the header as **Near Airbnb**).
+- Place data: `src/data/nearby.js` (categories, names, published hours, source URLs).
+- Styling: end of `src/index.css`.
+- The site groups nearby *area candidates* rather than calling any one 'closest', because the exact private Airbnb address is not available in the listing. Paste the exact address into the website's optional origin box to generate more precise Google Maps directions and category searches. The address is held in React state only, not saved in the repository; clicking a Google Maps link sends the entered address to Google.
+- Hours are **reference schedules checked November 9, 2026** rather than live business hours. Use **Live hours** or **Find nearby** to verify changes (especially Veterans Day, November 11).
+- User requested recreational and medical cannabis options, licensed consumption lounges, liquor/beer, dive bars, cocktail bars, groceries, Walmart, strip clubs, skate sharpening, massage, haircuts, sportsbooks, laundry, and late-night food. Additional quick searches cover pharmacy, gas, coffee, and urgent care.
+- Nevada adult-use law: 21+; legal purchases from licensed retailers, public use prohibited, property owner may restrict consumption. Don't consume or drive impaired. A consumption lounge has its own on-site purchase rules. Official citations: https://ccb.nv.gov/laws-regulations/ and https://ccb.nv.gov/list-of-licensees/ (state license list current as of Oct 2, 2026).
+- Main checked sources: https://www.dazedlounge.com/ ; https://palacestation.com/play/race-and-sports/ ; https://www.sourceforhockey.com/pages/las-vegas-source-for-hockey ; https://www.walmart.com/store-directory/nv/las%20vegas ; other listed hours were checked against local directory listings on Nov 9, 2026.
+- Uses only class techniques: function components, `useState`, controlled input `onChange`, array `.map()` and `.filter()`, props, conditional JSX, `key`, and ordinary HTML hyperlinks. No new npm dependency or paid API required.
+
+**Build before publishing:** `npm run build` generates `docs/`. In GitHub Pages use your existing `main` → `/docs` setting, then commit/sync the updated `docs/` with the source files.
+
+## Addition: country dancing and billiards (November 9, 2026)
+
+- The **Near Airbnb** section now includes **Country dancing** and **Pool & billiards** filters.
+- Country options: Stoney's Rockin' Country (Thu–Sat, 7 PM–2 AM, lessons 7:30/8:30 PM); Gilley's at Treasure Island (Sun–Thu noon–1 AM, Fri–Sat noon–2 AM, lessons Mon–Thu at 7 PM). Check special events/cover/age policy: https://www.stoneysrockincountry.com/ and https://treasureisland.com/entertainment/bars-lounges/gilleys-saloon
+- Billiards options: Griff's Bar & Billiards (daily 9 AM–4 AM; https://www.griffslv.com/), plus Club Billiard Story (published directory listing daily 2 PM–2 AM; verify, https://www.3cushionbilliards.com/where-to-play/detail/168/1/club-billiard-story).
+- These are area options rather than confirmed nearest locations. The site's optional origin address provides live Google Maps searches and directions. Hours are reference hours only; confirm for the November 11–15 trip.

@@ -27,6 +27,7 @@ import Weather from './components/Weather.jsx';
 import CoachCorner from './components/CoachCorner.jsx';
 import AirlineGuide from './components/AirlineGuide.jsx';
 import VeteranOffers from './components/VeteranOffers.jsx';
+import NearbyEssentials from './components/NearbyEssentials.jsx';
 
 // "export default" lets index.jsx import the component as App.
 // The <Header /> syntax is COMPONENT COMPOSITION: you use a component
@@ -51,6 +52,8 @@ export default function App() {
         {/* The coach notes are data; the playbook PDF lives in public/. */}
         <CoachCorner />
         <LocationLinks />
+        {/* Curated useful businesses plus a Google Maps search from the Airbnb. */}
+        <NearbyEssentials />
         <TravelInfo />
         {/* Policy cards are generated with .map(), not manually duplicated. */}
         <AirlineGuide />

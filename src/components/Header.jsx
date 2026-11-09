@@ -41,6 +41,7 @@ export default function Header() {
             <a href="#veteran-perks">Veteran freebies</a>
             <a href="#coach">Coach / Playbook</a>
             <a href="#locations">Rinks & maps</a>
+            <a href="#nearby">Near Airbnb</a>
             <a href="#airlines">Airlines</a>
             <a href="#packing">Packing</a>
           </nav>
