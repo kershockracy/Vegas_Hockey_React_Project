@@ -38,6 +38,7 @@ export default function Header() {
             <a href="#official-schedule">Game schedule</a>
             <a href="#weather">Weather</a>
             <a href="#itinerary">Itinerary</a>
+            <a href="#veteran-perks">Veteran freebies</a>
             <a href="#coach">Coach / Playbook</a>
             <a href="#locations">Rinks & maps</a>
             <a href="#airlines">Airlines</a>

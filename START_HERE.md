@@ -89,3 +89,21 @@ If a Vite server is already running for the old version, stop it with `Ctrl+C` a
 For a free public link, upload the **built website** to a static host (such as GitHub Pages). This is the same front-end build idea described in the class notes. Run `npm run build` and use the generated `dist` folder. This ZIP is the editable source project; it has not been published for you.
 
 To change future tournament games: edit `src/data/days.js`. The important official link stays at the top even before you update the manually entered itinerary.
+
+
+## New: veteran freebies in the daily footnotes (Nov 8, 2026)
+
+Each itinerary day now has a modest **Veteran food & perks** note at the very bottom of its schedule. The note uses the `veteranOfferIds` array inside `src/data/days.js` to decide which items appear. The separate **Veteran freebies around Vegas** section contains the full terms, sources and Google Maps links. These are not reservations and do not change the official hockey schedule.
+
+**Where to study the React code:**
+
+- `src/data/veteranOffers.js` — JavaScript objects, arrays, named exports, dot/bracket notation, and lots of explanatory comments.
+- `src/data/days.js` — the `veteranOfferIds` array in each day's object.
+- `src/components/VeteranPerksFootnote.jsx` — a small reusable component, `props`, `.map()`, JSX, `key`, and regular links.
+- `src/components/VeteranOffers.jsx` — a larger reusable `OfferCard` and `.map()` with the same data.
+- `src/components/DayCard.jsx` — passing the day's `veteranOfferIds` to the footnote as a prop.
+- `src/index.css` — readable CSS classes and responsive layout, no additional React hooks.
+
+**To add/edit an offer:** Add or change its entry in `VETERAN_OFFERS`, optionally add its ID to `VETERAN_OFFER_ORDER`, then add that ID to a day in `days.js`. No advanced API code, database, or new library is needed.
+
+**Publishing to the same GitHub Pages site:** Extract this ZIP and copy its contents INSIDE your existing Git-connected `Vegas_Hockey_React_Project` folder. Preserve the original hidden `.git` folder. Preview with `npm run dev`, then run `npm run build` (this updates `docs/`), then commit and sync in VS Code. Do not just push `src/` updates: GitHub Pages reads the built `docs/` files.

@@ -14,6 +14,8 @@
 // while null is a deliberate empty value. We use the literal text "TBD"
 // here because it communicates uncertainty to the people reading the site.
 //
+// veteranOfferIds is an ARRAY of strings that link to veteranOffers.js.
+// Our DayCard uses .map() to turn each deal ID into a small footnote.
 // To change the group's itinerary later, edit the objects here.
 // React automatically displays them because Itinerary.jsx uses .map() and props.
 
@@ -64,6 +66,7 @@ export const DAYS = [
         "status": "optional"
       }
     ],
+    "veteranOfferIds": ["southpoint", "applebees", "chilis", "silverton"],
     "foot": "Low-pressure first night: the NHL game is the anchor; everything afterward is optional.",
     "label": "WED NOV 11"
   },
@@ -113,6 +116,7 @@ export const DAYS = [
         "status": "optional"
       }
     ],
+    "veteranOfferIds": ["silverton", "mgm"],
     "foot": "Thursday is not the night to stay out late: Friday’s game starts at 8:20 AM.",
     "label": "THU NOV 12"
   },
@@ -162,6 +166,7 @@ export const DAYS = [
         "status": "optional"
       }
     ],
+    "veteranOfferIds": ["silverton", "guyfieri", "mgm"],
     "foot": "Fremont Street is the leading nightlife pick for a group on its first Vegas trip.",
     "label": "FRI NOV 13"
   },
@@ -204,6 +209,7 @@ export const DAYS = [
         "status": "optional"
       }
     ],
+    "veteranOfferIds": ["guyfieri", "mgm"],
     "foot": "Do not book a fixed-time excursion until the bracket and any championship path are known.",
     "label": "SAT NOV 14"
   },
@@ -260,6 +266,7 @@ export const DAYS = [
         "status": "confirmed"
       }
     ],
+    "veteranOfferIds": ["guyfieri", "mgm"],
     "foot": "Do not underestimate the bag logistics between checkout, final games, and the evening flight.",
     "label": "SUN NOV 15"
   }

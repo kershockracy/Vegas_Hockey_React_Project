@@ -26,6 +26,7 @@ import Section from './components/Section.jsx';
 import Weather from './components/Weather.jsx';
 import CoachCorner from './components/CoachCorner.jsx';
 import AirlineGuide from './components/AirlineGuide.jsx';
+import VeteranOffers from './components/VeteranOffers.jsx';
 
 // "export default" lets index.jsx import the component as App.
 // The <Header /> syntax is COMPONENT COMPOSITION: you use a component
@@ -44,6 +45,9 @@ export default function App() {
         <Weather />
         <Hero />
         <Itinerary />
+        {/* All daily footnotes link here for the full rules, dates and maps.
+            This component reads the SAME deal data as the footnotes. */}
+        <VeteranOffers />
         {/* The coach notes are data; the playbook PDF lives in public/. */}
         <CoachCorner />
         <LocationLinks />

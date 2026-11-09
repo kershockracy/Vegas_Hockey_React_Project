@@ -303,3 +303,38 @@ a:hover { text-decoration: none; }
 .airline-footnote {font-size:11px;color:#92acb9;line-height:1.6}
 @media(max-width:900px){.coach-layout{grid-template-columns:1fr}.airline-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.site-nav{flex-wrap:wrap}}
 @media(max-width:640px){.weather-shell{padding:14px 10px}.weather-top{align-items:stretch;flex-direction:column}.weather-current-link{text-align:center}.weather-strip{gap:4px}.weather-day{padding:12px 2px;gap:6px}.weather-day strong{font-size:9px}.weather-icon{font-size:25px}.weather-condition{font-size:10px}.weather-temps b{font-size:17px}.weather-temps small{font-size:11px;margin:0}.weather-rain{font-size:9px}.coach-board,.playbook-board{padding:16px}.airline-head{flex-direction:column;align-items:start}.airline-grid{grid-template-columns:1fr}.other-airline{align-items:start;flex-direction:column}}
+
+/* ============================================================================
+   ITEC 305: VETERAN DEALS FOOTNOTES + FULL LIST
+   CSS controls APPEARANCE; JSX controls WHAT to display.
+   The classes below match className="..." in the React components.
+   This is the same separation used in our HTML/CSS exercises and React app.
+   No JavaScript or extra React library is needed for these styles.
+   ============================================================================ */
+.veteran-day-note { margin-top:18px;padding:16px 18px;background:#132d39;border-left:3px solid #e9c47d;border-radius:5px; }
+.veteran-day-note-title { font-size:11px;font-weight:900;letter-spacing:.09em;color:#f0cd88; }
+.veteran-day-note-list { margin:9px 0 9px;padding-left:17px; }
+.veteran-day-note-list li { color:#b8cbd4;font-size:12px;line-height:1.65;margin:5px 0; }
+.veteran-day-note-list a { color:#f1d7a4;font-weight:750;text-underline-offset:3px; }
+.veteran-more-link { color:#91cedc;font-weight:750;text-underline-offset:3px;font-size:12px; }
+.veteran-note-disclaimer { color:#91a8b6;font-size:10px;line-height:1.6;margin:9px 0 0; }
+.veteran-highlight { margin-bottom:15px; padding:17px 21px;border:1px solid #6c5a36;border-radius:9px;background:#2a2c2b;display:flex;justify-content:space-between;align-items:center;gap:17px; }
+.veteran-highlight p {font-size:13px;line-height:1.7;color:#e6ddcf;margin:6px 0 0;}
+.veteran-highlight > span {white-space:nowrap;color:#e9bf75;font-size:11px;font-weight:800;}
+.veteran-offers-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;}
+.veteran-offer-card {min-width:0;background:#102635;border:1px solid #345063;border-radius:9px;padding:20px 21px;display:flex;flex-direction:column;}
+.veteran-offer-card-head {display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-bottom:9px;}
+.veteran-offer-badge {background:#403a2c;color:#f1c77f;padding:6px 9px;border-radius:4px;font-size:10px;font-weight:850;letter-spacing:.04em;}
+.veteran-offer-days {font-size:10px;font-weight:750;color:#91b2c1;}
+.veteran-offer-card h3 {font-size:20px;margin:5px 0 7px;line-height:1.2;}
+.veteran-offer-when {font-size:12px;color:#ebca86;}
+.veteran-offer-short {font-size:13px;color:#f0f3f4;line-height:1.5;margin:12px 0 5px;}
+.veteran-offer-details {font-size:12px;line-height:1.65;color:#abc1cc;margin:5px 0 11px;}
+.veteran-offer-place {font-size:11px;color:#8faab9;margin:auto 0 12px;}
+.veteran-offer-actions {display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;}
+.veteran-offer-actions a {border:1px solid #587587;padding:9px 12px;border-radius:5px;text-decoration:none;color:#efcd8a;font-size:11px;font-weight:750;}
+.veteran-offer-actions a:hover,.veteran-offer-actions a:focus-visible {background:#203e4d;}
+.veteran-important {padding:17px 20px;background:#1b303b;border:1px solid #3c5868;border-radius:8px;margin-top:15px;}
+.veteran-important strong {font-size:13px;color:#edd197;}
+.veteran-important p {margin:8px 0 0;color:#b4c7d0;font-size:11px;line-height:1.7;}
+@media(max-width:750px){.veteran-offers-grid{grid-template-columns:1fr}.veteran-highlight{flex-direction:column;align-items:start}.veteran-day-note{padding:14px}}

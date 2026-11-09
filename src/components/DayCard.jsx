@@ -1,3 +1,4 @@
+import VeteranPerksFootnote from './VeteranPerksFootnote.jsx';
 // ===================================================================
 // ITEC 305: .map(), KEYS and reading an OBJECT through PROPS
 // ===================================================================
@@ -29,6 +30,12 @@ export default function DayCard({ day }) {
         ))}
       </ol>
       <p className="day-footnote">{day.foot}</p>
+      {/* This footnote is BELOW each day's itinerary, exactly where a
+          teammate expects to find optional meal ideas. The "day" object
+          supplies the list of applicable deal IDs. PROPS pass that list
+          down to a separate component. The actual deal information lives
+          only in veteranOffers.js, so we don't duplicate the text. */}
+      <VeteranPerksFootnote offerIds={day.veteranOfferIds} />
     </article>
   );
 }
